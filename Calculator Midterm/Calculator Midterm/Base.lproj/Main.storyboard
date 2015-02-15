@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="vXZ-lx-hvc" customClass="ViewController" customModule="Calculator_Midterm" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6b-iz-eyB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTX-dc-IjV">
+                                        <rect key="frame" x="8" y="8" width="391" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="QVT-D0-QOc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4K-iC-qPv">
+                                        <rect key="frame" x="8" y="102" width="104" height="93"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="2IH-m3-N5I"/>
+                                            <constraint firstAttribute="height" constant="100" id="Gdr-qi-Wyl"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTJ-XD-WAA">
+                                        <rect key="frame" x="120" y="102" width="104" height="93"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxp-BF-fCO">
+                                        <rect key="frame" x="232" y="102" width="104" height="93"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYI-VG-Zi4">
+                                        <rect key="frame" x="344" y="102" width="104" height="93"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="J4K-iC-qPv" firstAttribute="top" secondItem="OTX-dc-IjV" secondAttribute="bottom" id="AzC-fd-k9Q"/>
+                                    <constraint firstItem="VYI-VG-Zi4" firstAttribute="leading" secondItem="Sxp-BF-fCO" secondAttribute="trailing" id="Dk0-rj-qrL"/>
+                                    <constraint firstItem="Sxp-BF-fCO" firstAttribute="top" secondItem="OTX-dc-IjV" secondAttribute="bottom" id="JhG-uf-kXt"/>
+                                    <constraint firstAttribute="trailing" secondItem="VYI-VG-Zi4" secondAttribute="trailing" constant="152" id="V6a-WI-0lp"/>
+                                    <constraint firstItem="J4K-iC-qPv" firstAttribute="width" secondItem="VYI-VG-Zi4" secondAttribute="width" id="XOQ-y8-zl6"/>
+                                    <constraint firstItem="NTJ-XD-WAA" firstAttribute="width" secondItem="J4K-iC-qPv" secondAttribute="width" id="Yth-9o-MU8"/>
+                                    <constraint firstItem="J4K-iC-qPv" firstAttribute="leading" secondItem="g6b-iz-eyB" secondAttribute="leading" id="Zai-Ai-iNA"/>
+                                    <constraint firstItem="VYI-VG-Zi4" firstAttribute="top" secondItem="OTX-dc-IjV" secondAttribute="bottom" id="b7Y-lv-l3q"/>
+                                    <constraint firstItem="NTJ-XD-WAA" firstAttribute="leading" secondItem="J4K-iC-qPv" secondAttribute="trailing" id="dYX-au-FS8"/>
+                                    <constraint firstItem="J4K-iC-qPv" firstAttribute="height" secondItem="VYI-VG-Zi4" secondAttribute="height" id="dsS-RE-OwD"/>
+                                    <constraint firstItem="OTX-dc-IjV" firstAttribute="leading" secondItem="g6b-iz-eyB" secondAttribute="leading" id="fIH-jM-PMe"/>
+                                    <constraint firstItem="NTJ-XD-WAA" firstAttribute="height" secondItem="J4K-iC-qPv" secondAttribute="height" id="gaS-In-Wi6"/>
+                                    <constraint firstItem="Sxp-BF-fCO" firstAttribute="leading" secondItem="NTJ-XD-WAA" secondAttribute="trailing" id="nDb-FO-dmB"/>
+                                    <constraint firstItem="Sxp-BF-fCO" firstAttribute="width" secondItem="J4K-iC-qPv" secondAttribute="width" id="rkv-04-Gse"/>
+                                    <constraint firstItem="NTJ-XD-WAA" firstAttribute="top" secondItem="OTX-dc-IjV" secondAttribute="bottom" id="stt-4d-Ts4"/>
+                                    <constraint firstAttribute="trailing" secondItem="OTX-dc-IjV" secondAttribute="trailing" constant="201" id="tZA-RK-ekB"/>
+                                    <constraint firstItem="Sxp-BF-fCO" firstAttribute="height" secondItem="J4K-iC-qPv" secondAttribute="height" id="uLA-uM-ZFt"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="V6a-WI-0lp"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="g6b-iz-eyB" secondAttribute="bottom" id="KXu-Rh-xO4"/>
+                            <constraint firstItem="g6b-iz-eyB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="OY7-iV-xVA"/>
+                            <constraint firstAttribute="trailing" secondItem="g6b-iz-eyB" secondAttribute="trailing" id="eDj-Hy-3KN"/>
+                            <constraint firstItem="g6b-iz-eyB" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="gxX-2u-8Ca"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
