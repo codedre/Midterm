@@ -13,6 +13,7 @@
 		7F39FD7F1A90ECA5004C7C09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F39FD7E1A90ECA5004C7C09 /* Images.xcassets */; };
 		7F39FD821A90ECA5004C7C09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F39FD801A90ECA5004C7C09 /* LaunchScreen.xib */; };
 		7F39FD8E1A90ECA5004C7C09 /* Calculator_MidtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FD8D1A90ECA5004C7C09 /* Calculator_MidtermTests.swift */; };
+		85CBDE071A9281D900A5A028 /* PerformOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CBDE061A9281D900A5A028 /* PerformOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7F39FD871A90ECA5004C7C09 /* Calculator MidtermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calculator MidtermTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F39FD8C1A90ECA5004C7C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F39FD8D1A90ECA5004C7C09 /* Calculator_MidtermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_MidtermTests.swift; sourceTree = "<group>"; };
+		85CBDE061A9281D900A5A028 /* PerformOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				7F39FD7E1A90ECA5004C7C09 /* Images.xcassets */,
 				7F39FD801A90ECA5004C7C09 /* LaunchScreen.xib */,
 				7F39FD751A90ECA5004C7C09 /* Supporting Files */,
+				85CBDE061A9281D900A5A028 /* PerformOperations.swift */,
 			);
 			path = "Calculator Midterm";
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				7F39FD7A1A90ECA5004C7C09 /* ViewController.swift in Sources */,
 				7F39FD781A90ECA5004C7C09 /* AppDelegate.swift in Sources */,
+				85CBDE071A9281D900A5A028 /* PerformOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +409,7 @@
 				7F39FD931A90ECA5004C7C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7F39FD941A90ECA5004C7C09 /* Build configuration list for PBXNativeTarget "Calculator MidtermTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				7F39FD961A90ECA5004C7C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
