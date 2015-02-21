@@ -10,46 +10,56 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var calcDisplay: UILabel!
     
     @IBAction func pressZero(sender: UIButton) {
+        calcDisplay.text! += "0"
     }
     
     
     @IBAction func pressOne(sender: UIButton) {
-        
+        calcDisplay.text! += "1"
         
     }
     
     
     @IBAction func pressTwo(sender: UIButton) {
+        calcDisplay.text! += "2"
     }
     
     
     @IBAction func pressThree(sender: UIButton) {
+        calcDisplay.text! += "3"
     }
     
     
     @IBAction func pressFour(sender: UIButton) {
+        calcDisplay.text! += "4"
     }
     
     
     @IBAction func pressFive(sender: UIButton) {
+        calcDisplay.text! += "5"
     }
     
     
     @IBAction func pressSix(sender: UIButton) {
+        calcDisplay.text! += "6"
     }
     
     
     @IBAction func pressSeven(sender: UIButton) {
+        calcDisplay.text! += "7"
     }
     
     
     @IBAction func pressEight(sender: UIButton) {
+        calcDisplay.text! += "8"
     }
     
     
     @IBAction func pressNine(sender: UIButton) {
+        calcDisplay.text! += "9"
     }
     
     

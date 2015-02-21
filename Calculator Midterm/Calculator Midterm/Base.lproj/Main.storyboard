@@ -653,6 +653,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="calcDisplay" destination="Bel-oV-IBu" id="kZ8-rd-CFv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
