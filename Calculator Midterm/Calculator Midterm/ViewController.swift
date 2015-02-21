@@ -16,50 +16,85 @@ class ViewController: UIViewController {
         calcDisplay.text! += "0"
     }
     
-    
     @IBAction func pressOne(sender: UIButton) {
-        calcDisplay.text! += "1"
+        if first(calcDisplay.text!) == "0"
+            { calcDisplay.text! = "1" }
+        
+        else
+            { calcDisplay.text! += "1" }
         
     }
     
     
     @IBAction func pressTwo(sender: UIButton) {
-        calcDisplay.text! += "2"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "2" }
+            
+        else
+        { calcDisplay.text! += "2" }
     }
     
     
     @IBAction func pressThree(sender: UIButton) {
-        calcDisplay.text! += "3"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "3" }
+            
+        else
+        { calcDisplay.text! += "3" }
     }
     
     
     @IBAction func pressFour(sender: UIButton) {
-        calcDisplay.text! += "4"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "4" }
+            
+        else
+        { calcDisplay.text! += "4" }
     }
     
     
     @IBAction func pressFive(sender: UIButton) {
-        calcDisplay.text! += "5"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "5" }
+            
+        else
+        { calcDisplay.text! += "5" }
     }
     
     
     @IBAction func pressSix(sender: UIButton) {
-        calcDisplay.text! += "6"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "6" }
+            
+        else
+        { calcDisplay.text! += "6" }
     }
     
     
     @IBAction func pressSeven(sender: UIButton) {
-        calcDisplay.text! += "7"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "7" }
+            
+        else
+        { calcDisplay.text! += "7" }
     }
     
     
     @IBAction func pressEight(sender: UIButton) {
-        calcDisplay.text! += "8"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "8" }
+            
+        else
+        { calcDisplay.text! += "8" }
     }
     
     
     @IBAction func pressNine(sender: UIButton) {
-        calcDisplay.text! += "9"
+        if first(calcDisplay.text!) == "0"
+        { calcDisplay.text! = "9" }
+            
+        else
+        { calcDisplay.text! += "9" }
     }
     
     
