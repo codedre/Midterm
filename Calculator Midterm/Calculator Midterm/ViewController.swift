@@ -19,9 +19,12 @@ class ViewController: UIViewController {
     @IBAction func pressOne(sender: UIButton) {
         if first(calcDisplay.text!) == "0"
             { calcDisplay.text! = "1" }
+            
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-1" }
         
         else
-            { calcDisplay.text! += "1" }
+        { calcDisplay.text! += "1" }
         
     }
     
@@ -29,6 +32,9 @@ class ViewController: UIViewController {
     @IBAction func pressTwo(sender: UIButton) {
         if first(calcDisplay.text!) == "0"
         { calcDisplay.text! = "2" }
+            
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-2" }
             
         else
         { calcDisplay.text! += "2" }
@@ -39,6 +45,9 @@ class ViewController: UIViewController {
         if first(calcDisplay.text!) == "0"
         { calcDisplay.text! = "3" }
             
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-3" }
+            
         else
         { calcDisplay.text! += "3" }
     }
@@ -47,6 +56,9 @@ class ViewController: UIViewController {
     @IBAction func pressFour(sender: UIButton) {
         if first(calcDisplay.text!) == "0"
         { calcDisplay.text! = "4" }
+            
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-4" }
             
         else
         { calcDisplay.text! += "4" }
@@ -57,6 +69,9 @@ class ViewController: UIViewController {
         if first(calcDisplay.text!) == "0"
         { calcDisplay.text! = "5" }
             
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-5" }
+            
         else
         { calcDisplay.text! += "5" }
     }
@@ -66,14 +81,23 @@ class ViewController: UIViewController {
         if first(calcDisplay.text!) == "0"
         { calcDisplay.text! = "6" }
             
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-1" }
+            
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-6" }
+            
         else
         { calcDisplay.text! += "6" }
     }
     
     
     @IBAction func pressSeven(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
+        if (first(calcDisplay.text!) == "0")
         { calcDisplay.text! = "7" }
+            
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-7" }
             
         else
         { calcDisplay.text! += "7" }
@@ -84,6 +108,9 @@ class ViewController: UIViewController {
         if first(calcDisplay.text!) == "0"
         { calcDisplay.text! = "8" }
             
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-8" }
+            
         else
         { calcDisplay.text! += "8" }
     }
@@ -93,11 +120,20 @@ class ViewController: UIViewController {
         if first(calcDisplay.text!) == "0"
         { calcDisplay.text! = "9" }
             
+        else if prefix(calcDisplay.text!, 2) == "-0"
+        { calcDisplay.text = "-9" }
+            
         else
         { calcDisplay.text! += "9" }
     }
     
     
+    @IBAction func changeToNegativeOrPositive(sender: UIButton) {
+        
+        calcDisplay.text = "-" + calcDisplay.text!
+    }
+    
+  /*
 
     var userIsInTheMiddleOfTypingNumber = false
     var display: UILabel = UILabel(frame:CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -145,7 +181,7 @@ class ViewController: UIViewController {
             displayValue = 0
         }
     }
-        
+        */
         
         
     override func viewDidLoad() {

@@ -37,6 +37,9 @@
                                         <exclude reference="kuR-Vt-SZu"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="changeToNegativeOrPositive:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hUx-vh-xeV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPm-Cx-SGF">
                                 <rect key="frame" x="149" y="160" width="74" height="73"/>
