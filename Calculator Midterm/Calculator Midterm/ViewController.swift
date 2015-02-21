@@ -9,6 +9,50 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBAction func pressZero(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressOne(sender: UIButton) {
+        
+        
+    }
+    
+    
+    @IBAction func pressTwo(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressThree(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressFour(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressFive(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressSix(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressSeven(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressEight(sender: UIButton) {
+    }
+    
+    
+    @IBAction func pressNine(sender: UIButton) {
+    }
+    
+    
 
     var userIsInTheMiddleOfTypingNumber = false
     var display: UILabel = UILabel(frame:CGRect(x: 0, y: 0, width: 0, height: 0))
