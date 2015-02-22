@@ -10,7 +10,7 @@
 	<string>Calculator Midterm</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
+		<key>A693B5375C4134D899E049311A3F90EF5523E6BF</key>
 		<string>https://github.com/codedre/MOB-DC-01.git</string>
 		<key>C0EE2BA2551EF865B77EE5BF33EADADA78FE4B99</key>
 		<string>https://github.com/codedre/Midterm.git</string>
@@ -19,7 +19,7 @@
 	<string>Calculator Midterm/Calculator Midterm.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>10A52EA4FBADB6C746B5260032017E5923CCC696</key>
+		<key>A693B5375C4134D899E049311A3F90EF5523E6BF</key>
 		<string>../../../..</string>
 		<key>C0EE2BA2551EF865B77EE5BF33EADADA78FE4B99</key>
 		<string>../../..</string>
@@ -36,7 +36,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>10A52EA4FBADB6C746B5260032017E5923CCC696</string>
+			<string>A693B5375C4134D899E049311A3F90EF5523E6BF</string>
 			<key>IDESourceControlWCCName</key>
 			<string></string>
 		</dict>

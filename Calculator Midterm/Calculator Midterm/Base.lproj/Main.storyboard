@@ -61,6 +61,9 @@
                                         <exclude reference="enE-Mj-4mn"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="percentButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="s1d-vI-up8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cow-5X-uNu">
                                 <rect key="frame" x="224" y="160" width="73" height="73"/>
@@ -82,6 +85,9 @@
                                         <exclude reference="zBs-jX-5Cv"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d1W-sO-oOw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QcR-Vj-fEp">
                                 <rect key="frame" x="0.0" y="160" width="73" height="73"/>
@@ -91,6 +97,9 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PFg-dk-WVO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCt-6g-LwO">
                                 <rect key="frame" x="0.0" y="456" width="149" height="73"/>
@@ -141,6 +150,9 @@
                                         <exclude reference="W2d-sT-T65"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="pressDecimal:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RsG-2h-lRW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JE-4m-onR">
                                 <rect key="frame" x="224" y="456" width="73" height="73"/>
@@ -166,6 +178,9 @@
                                         <exclude reference="zZt-2a-YAe"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="equals:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vUR-rx-GKd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nIh-QS-gnR">
                                 <rect key="frame" x="0.0" y="382" width="73" height="73"/>
@@ -403,6 +418,9 @@
                                         <exclude reference="iKB-p0-caB"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="V8C-NN-Yqv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Rg-L0-x9r">
                                 <rect key="frame" x="224" y="382" width="73" height="73"/>
@@ -424,6 +442,9 @@
                                         <exclude reference="qcT-OI-TK3"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sPV-fe-1bU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqO-mI-yOg">
                                 <rect key="frame" x="224" y="308" width="73" height="73"/>
@@ -445,6 +466,9 @@
                                         <exclude reference="p5T-y7-F0k"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Ro-ed-7eq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bel-oV-IBu" userLabel="display label">
                                 <rect key="frame" x="237" y="61" width="48" height="101"/>

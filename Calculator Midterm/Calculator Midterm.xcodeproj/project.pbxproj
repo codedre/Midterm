@@ -13,7 +13,7 @@
 		7F39FD7F1A90ECA5004C7C09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F39FD7E1A90ECA5004C7C09 /* Images.xcassets */; };
 		7F39FD821A90ECA5004C7C09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F39FD801A90ECA5004C7C09 /* LaunchScreen.xib */; };
 		7F39FD8E1A90ECA5004C7C09 /* Calculator_MidtermTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39FD8D1A90ECA5004C7C09 /* Calculator_MidtermTests.swift */; };
-		85CBDE071A9281D900A5A028 /* PerformOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CBDE061A9281D900A5A028 /* PerformOperations.swift */; };
+		85C292A11A999CE900836507 /* icon72x72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C292A01A999CE900836507 /* icon72x72@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		7F39FD871A90ECA5004C7C09 /* Calculator MidtermTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Calculator MidtermTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F39FD8C1A90ECA5004C7C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F39FD8D1A90ECA5004C7C09 /* Calculator_MidtermTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator_MidtermTests.swift; sourceTree = "<group>"; };
-		85CBDE061A9281D900A5A028 /* PerformOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformOperations.swift; sourceTree = "<group>"; };
+		85C292A01A999CE900836507 /* icon72x72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon72x72@2x.png"; sourceTree = "<group>"; };
 		94EE57961A9932CF00E62D28 /* MidtermPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MidtermPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,13 +81,9 @@
 		7F39FD741A90ECA5004C7C09 /* Calculator Midterm */ = {
 			isa = PBXGroup;
 			children = (
-				7F39FD771A90ECA5004C7C09 /* AppDelegate.swift */,
 				7F39FD791A90ECA5004C7C09 /* ViewController.swift */,
 				7F39FD7B1A90ECA5004C7C09 /* Main.storyboard */,
-				7F39FD7E1A90ECA5004C7C09 /* Images.xcassets */,
-				7F39FD801A90ECA5004C7C09 /* LaunchScreen.xib */,
 				7F39FD751A90ECA5004C7C09 /* Supporting Files */,
-				85CBDE061A9281D900A5A028 /* PerformOperations.swift */,
 			);
 			path = "Calculator Midterm";
 			sourceTree = "<group>";
@@ -95,6 +91,10 @@
 		7F39FD751A90ECA5004C7C09 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F39FD771A90ECA5004C7C09 /* AppDelegate.swift */,
+				7F39FD801A90ECA5004C7C09 /* LaunchScreen.xib */,
+				7F39FD7E1A90ECA5004C7C09 /* Images.xcassets */,
+				85C292A01A999CE900836507 /* icon72x72@2x.png */,
 				7F39FD761A90ECA5004C7C09 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -197,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C292A11A999CE900836507 /* icon72x72@2x.png in Resources */,
 				7F39FD7D1A90ECA5004C7C09 /* Main.storyboard in Resources */,
 				7F39FD821A90ECA5004C7C09 /* LaunchScreen.xib in Resources */,
 				7F39FD7F1A90ECA5004C7C09 /* Images.xcassets in Resources */,
@@ -219,7 +220,6 @@
 			files = (
 				7F39FD7A1A90ECA5004C7C09 /* ViewController.swift in Sources */,
 				7F39FD781A90ECA5004C7C09 /* AppDelegate.swift in Sources */,
-				85CBDE071A9281D900A5A028 /* PerformOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

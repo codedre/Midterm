@@ -12,187 +12,169 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var calcDisplay: UILabel!
     
+    var firstNumber = 0.0
+    var secondNumber = 0.0
+    var symbolForCalculation = ""
+    var userIsInTheMiddleOfTypingNumber = false
+    var errorCheckVariable = false
+    
+    @IBAction func equals(sender: UIButton) {
+        if errorCheckVariable == true {} else {
+            if symbolForCalculation == "=" {} else {
+                secondNumber = displayValue
+                calculateEquation()
+                symbolForCalculation = sender.currentTitle!
+            }
+        }
+    }
+    
+    @IBAction func operate(sender: UIButton) {
+        if errorCheckVariable == true {} else {
+            if symbolForCalculation == "" || symbolForCalculation == "=" {
+                firstNumber = displayValue
+                enter(sender)
+            } else {
+                userIsInTheMiddleOfTypingNumber = false
+                secondNumber = displayValue
+                calculateEquation()
+                symbolForCalculation = sender.currentTitle!
+            }
+        }
+    }
+    
     @IBAction func pressZero(sender: UIButton) {
-        calcDisplay.text! += "0"
+        appendDigit(sender)
     }
     
     @IBAction func pressOne(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-            { calcDisplay.text! = "1" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-1" }
-        
-        else
-        { calcDisplay.text! += "1" }
-        
+        appendDigit(sender)
     }
     
     
     @IBAction func pressTwo(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-        { calcDisplay.text! = "2" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-2" }
-            
-        else
-        { calcDisplay.text! += "2" }
+        appendDigit(sender)
     }
     
     
     @IBAction func pressThree(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-        { calcDisplay.text! = "3" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-3" }
-            
-        else
-        { calcDisplay.text! += "3" }
+        appendDigit(sender)
     }
     
     
     @IBAction func pressFour(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-        { calcDisplay.text! = "4" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-4" }
-            
-        else
-        { calcDisplay.text! += "4" }
+        appendDigit(sender)
     }
     
     
     @IBAction func pressFive(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-        { calcDisplay.text! = "5" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-5" }
-            
-        else
-        { calcDisplay.text! += "5" }
+        appendDigit(sender)
     }
     
     
     @IBAction func pressSix(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-        { calcDisplay.text! = "6" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-1" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-6" }
-            
-        else
-        { calcDisplay.text! += "6" }
+        appendDigit(sender)
     }
     
     
     @IBAction func pressSeven(sender: UIButton) {
-        if (first(calcDisplay.text!) == "0")
-        { calcDisplay.text! = "7" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-7" }
-            
-        else
-        { calcDisplay.text! += "7" }
+        appendDigit(sender)
     }
     
     
     @IBAction func pressEight(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-        { calcDisplay.text! = "8" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-8" }
-            
-        else
-        { calcDisplay.text! += "8" }
+        appendDigit(sender)
     }
     
     
     @IBAction func pressNine(sender: UIButton) {
-        if first(calcDisplay.text!) == "0"
-        { calcDisplay.text! = "9" }
-            
-        else if prefix(calcDisplay.text!, 2) == "-0"
-        { calcDisplay.text = "-9" }
-            
-        else
-        { calcDisplay.text! += "9" }
+        appendDigit(sender)
+    }
+    @IBAction func pressDecimal(sender: UIButton) {
+        appendDigit(sender)
     }
     
-    
-    @IBAction func changeToNegativeOrPositive(sender: UIButton) {
-        if first(calcDisplay.text!) == "-"
-            {
-                var droppedFirst = dropFirst(calcDisplay.text!)
-                calcDisplay.text = droppedFirst
-                
-            }
-        
-        else
-            {
-                calcDisplay.text = "-" + calcDisplay.text!
-            }
-    }
-    
-  /*
-
-    var userIsInTheMiddleOfTypingNumber = false
-    var display: UILabel = UILabel(frame:CGRect(x: 0, y: 0, width: 0, height: 0))
-
-    var brain = PerformOperations()
-
-    var displayValue: Double {
-        get {
-            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue
-        } set {
-            display.text = "\(newValue)"
+    @IBAction func clearButton(sender: UIButton) {
+        if userIsInTheMiddleOfTypingNumber == true {
             userIsInTheMiddleOfTypingNumber = false
+            calcDisplay.text = "0"
+        } else {
+            userIsInTheMiddleOfTypingNumber = false
+            calcDisplay.text = "0"
+            firstNumber = 0
+            secondNumber = 0
+            symbolForCalculation = ""
         }
     }
-
     
-    func appendDigit(sender:UIButton) {
+    @IBAction func changeToNegativeOrPositive(sender: UIButton) {
+        if errorCheckVariable == true {} else {
+            if calcDisplay.text! == "0" {} else {
+                calcDisplay.text! = "\(displayValue * -1)"
+            }
+        }
+    }
+    
+    @IBAction func percentButton(sender: UIButton) {
+        if errorCheckVariable == true {} else {
+            if calcDisplay.text! == "0" {} else {
+                calcDisplay.text! = "\(displayValue / 100)"
+            }
+        }
+    }
+    
+    
+    func appendDigit(sender: UIButton) {
+        errorCheckVariable = false
         let digit = sender.currentTitle!
         if userIsInTheMiddleOfTypingNumber {
-            display.text = display.text! + digit
+            calcDisplay.text = calcDisplay.text! + digit
         } else {
-            display.text = digit
+            calcDisplay.text = digit
             userIsInTheMiddleOfTypingNumber = true
         }
     }
     
-    func operate (sender:UIButton) {
-        if userIsInTheMiddleOfTypingNumber {
-            enter(sender)
+    func calculateEquation() {
+        userIsInTheMiddleOfTypingNumber = false
+        var result = 0.0
+        let symbol = self.symbolForCalculation
+        
+        switch symbol {
+        case "x" : result = firstNumber * secondNumber
+        case "÷" : if secondNumber == 0 { errorCheckVariable = true } else { result = firstNumber / secondNumber }
+        case "+" : result = firstNumber + secondNumber
+        case "-" : result = firstNumber - secondNumber
+            //            case "√" : result = sqrt(secondNumber)
+        default : break
         }
-        if let operation = sender.currentTitle {
-            if let result = brain.performOperation(operation) {
-                displayValue = result
-            } else {
-                displayValue = 0
-            }
+        if result >= 999999 {
+            errorCheckVariable = true
+        }
+        if errorCheckVariable == true {
+            calcDisplay.text! = "Error"
+            firstNumber = 0
+            secondNumber = 0
+            symbolForCalculation = ""
+        } else {
+            calcDisplay.text! = "\(result)"
+            self.firstNumber = result
         }
     }
-    
+
     func enter(sender:UIButton) {
         userIsInTheMiddleOfTypingNumber = false
-        if let result = brain.pushOperand(displayValue) {
-            displayValue = result
-        } else {
-            displayValue = 0
+        symbolForCalculation = sender.currentTitle!
+    }
+    
+    var displayValue: Double {
+        get {
+            return NSNumberFormatter().numberFromString(calcDisplay.text!)!.doubleValue
+        } set {
+            calcDisplay.text = "\(newValue)"
         }
     }
-        */
-        
-        
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
