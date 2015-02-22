@@ -131,7 +131,9 @@ class ViewController: UIViewController {
     @IBAction func changeToNegativeOrPositive(sender: UIButton) {
         if first(calcDisplay.text!) == "-"
             {
-                dropFirst(calcDisplay.text!)
+                var droppedFirst = dropFirst(calcDisplay.text!)
+                calcDisplay.text = droppedFirst
+                
             }
         
         else
