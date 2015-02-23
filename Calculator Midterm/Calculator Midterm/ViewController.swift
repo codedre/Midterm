@@ -138,16 +138,17 @@ class ViewController: UIViewController {
         userIsInTheMiddleOfTypingNumber = false
         var result = 0.0
         let symbol = self.symbolForCalculation
+        let numOfPlaces = 6.0
+        let multiplier = pow(10,numOfPlaces)
         
         switch symbol {
         case "x" : result = firstNumber * secondNumber
         case "÷" : if secondNumber == 0 { errorCheckVariable = true } else { result = firstNumber / secondNumber }
         case "+" : result = firstNumber + secondNumber
         case "-" : result = firstNumber - secondNumber
-            //            case "√" : result = sqrt(secondNumber)
         default : break
         }
-        if result >= 999999 {
+        if result >= 9999999999 {
             errorCheckVariable = true
         }
         if errorCheckVariable == true {
@@ -156,6 +157,7 @@ class ViewController: UIViewController {
             secondNumber = 0
             symbolForCalculation = ""
         } else {
+            result = round(result * multiplier) / multiplier
             calcDisplay.text! = "\(result)"
             self.firstNumber = result
         }
