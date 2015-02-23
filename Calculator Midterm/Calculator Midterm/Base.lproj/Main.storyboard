@@ -470,14 +470,22 @@
                                     <action selector="operate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0Ro-ed-7eq"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bel-oV-IBu" userLabel="display label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="43" translatesAutoresizingMaskIntoConstraints="NO" id="Bel-oV-IBu" userLabel="display label">
                                 <rect key="frame" x="237" y="61" width="48" height="101"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="FhF-Je-NhF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="101" id="Jc3-Ba-x9G"/>
                                     <constraint firstAttribute="height" constant="100" id="dAK-vQ-IUy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="85"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jc3-Ba-x9G"/>
+                                        <exclude reference="dAK-vQ-IUy"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -493,6 +501,7 @@
                             <constraint firstItem="aPm-Cx-SGF" firstAttribute="width" secondItem="QcR-Vj-fEp" secondAttribute="width" id="6t0-iH-hdw"/>
                             <constraint firstItem="zqO-mI-yOg" firstAttribute="top" secondItem="dTS-8S-JL5" secondAttribute="bottom" constant="1" id="6t7-al-8Gc"/>
                             <constraint firstItem="Vv6-U7-zcb" firstAttribute="width" secondItem="2JE-4m-onR" secondAttribute="width" id="7UV-aE-nC2"/>
+                            <constraint firstItem="QcR-Vj-fEp" firstAttribute="leading" secondItem="Bel-oV-IBu" secondAttribute="leading" id="7hS-Al-Dih"/>
                             <constraint firstItem="QcR-Vj-fEp" firstAttribute="height" secondItem="eN1-vp-zbM" secondAttribute="height" id="9UG-ja-mAh"/>
                             <constraint firstItem="QcR-Vj-fEp" firstAttribute="height" secondItem="2JE-4m-onR" secondAttribute="height" id="9c4-LV-9oZ"/>
                             <constraint firstAttribute="trailing" secondItem="8Rg-L0-x9r" secondAttribute="trailing" constant="1" id="9io-hj-ica"/>
@@ -518,7 +527,6 @@
                             <constraint firstItem="Cow-5X-uNu" firstAttribute="height" secondItem="2JE-4m-onR" secondAttribute="height" id="I2s-Rg-hpm"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="width" secondItem="Nk8-rp-IMh" secondAttribute="width" id="Ieu-Db-FIe"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="height" secondItem="8DV-G9-mYI" secondAttribute="height" id="Jh6-aT-47q"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Bel-oV-IBu" secondAttribute="trailing" constant="1" id="Jpz-fD-LGA"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="height" secondItem="txy-Wb-LdA" secondAttribute="height" id="KGa-OY-Pza"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="width" secondItem="dTS-8S-JL5" secondAttribute="width" id="KR2-Bv-6e9"/>
                             <constraint firstItem="ycK-ar-mUQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="1" id="Keb-mr-1Ju"/>
@@ -555,7 +563,6 @@
                             <constraint firstItem="QcR-Vj-fEp" firstAttribute="width" secondItem="eN1-vp-zbM" secondAttribute="width" id="ZFu-RO-6O9"/>
                             <constraint firstItem="iWx-nV-DzP" firstAttribute="height" secondItem="2JE-4m-onR" secondAttribute="height" id="ZH3-ms-nag"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="width" secondItem="8DV-G9-mYI" secondAttribute="width" id="acj-Ap-EtY"/>
-                            <constraint firstItem="Bel-oV-IBu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="1" id="bI9-Mb-iYh"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="height" secondItem="RpA-xW-wOx" secondAttribute="height" id="bWP-bf-sQL"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="width" secondItem="zqO-mI-yOg" secondAttribute="width" id="cHs-JO-nt8"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="width" secondItem="TdK-JG-9cD" secondAttribute="width" id="daR-bo-sRT"/>
@@ -566,6 +573,7 @@
                             <constraint firstItem="aPm-Cx-SGF" firstAttribute="leading" secondItem="eN1-vp-zbM" secondAttribute="trailing" constant="1" id="fPR-RN-rjW"/>
                             <constraint firstItem="QcR-Vj-fEp" firstAttribute="height" secondItem="Cow-5X-uNu" secondAttribute="height" id="fRA-BP-8Fo"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="height" secondItem="8Rg-L0-x9r" secondAttribute="height" id="fS5-qG-b6t"/>
+                            <constraint firstItem="Bel-oV-IBu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="gGh-cY-Wcb"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="width" secondItem="Nk8-rp-IMh" secondAttribute="width" id="gNe-fI-hhk"/>
                             <constraint firstItem="lqG-cv-8lr" firstAttribute="top" secondItem="RpA-xW-wOx" secondAttribute="bottom" constant="1" id="h0e-EU-QMQ"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="height" secondItem="ycK-ar-mUQ" secondAttribute="height" id="hL7-qa-JKe"/>
@@ -578,6 +586,7 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Nk8-rp-IMh" secondAttribute="bottom" constant="1" id="ieu-s3-37B"/>
                             <constraint firstItem="Cow-5X-uNu" firstAttribute="width" secondItem="2JE-4m-onR" secondAttribute="width" id="jCB-f3-gYr"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="height" secondItem="RpA-xW-wOx" secondAttribute="height" id="jKU-OM-Cp9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bel-oV-IBu" secondAttribute="trailing" id="jcy-CT-58l"/>
                             <constraint firstItem="TdK-JG-9cD" firstAttribute="leading" secondItem="ycK-ar-mUQ" secondAttribute="trailing" constant="1" id="jhr-jE-fPa"/>
                             <constraint firstItem="LCt-6g-LwO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="1" id="kLd-F0-6zj"/>
                             <constraint firstItem="2JE-4m-onR" firstAttribute="width" secondItem="zqO-mI-yOg" secondAttribute="width" id="kOZ-jj-meq"/>
@@ -622,6 +631,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="7hS-Al-Dih"/>
                                 <exclude reference="9UG-ja-mAh"/>
                                 <exclude reference="9c4-LV-9oZ"/>
                                 <exclude reference="HeG-PK-Omv"/>
